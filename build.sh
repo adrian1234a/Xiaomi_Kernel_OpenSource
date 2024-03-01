@@ -6,7 +6,7 @@
 SECONDS=0 # builtin bash timer
 TC_DIR="$GITHUB_WORKSPACE/kernel_workspace/clang/clang-r487747c"
 AK3_DIR="$HOME/AnyKernel3"
-DEFCONFIG="lisa_GKI.config"
+DEFCONFIG="gki_config"
 
 ZIPNAME="Stock-Kernel-$(date '+%Y%m%d-%H%M')-ksu.zip"
 
