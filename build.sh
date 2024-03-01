@@ -8,7 +8,7 @@ TC_DIR="$GITHUB_WORKSPACE/kernel_workspace/clang/clang-r487747c"
 AK3_DIR="$HOME/AnyKernel3"
 DEFCONFIG="lisa_GKI.config"
 
-ZIPNAME="QuicksilveR-lisa-$(date '+%Y%m%d-%H%M').zip"
+ZIPNAME="Stock-Kernel-$(date '+%Y%m%d-%H%M')-ksu.zip"
 
 if test -z "$(git rev-parse --show-cdup 2>/dev/null)" &&
    head=$(git rev-parse --verify HEAD 2>/dev/null); then
