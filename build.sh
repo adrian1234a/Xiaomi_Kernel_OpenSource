@@ -6,7 +6,7 @@
 SECONDS=0 # builtin bash timer
 TC_DIR="$GITHUB_WORKSPACE/kernel_workspace/clang/clang-r487747c"
 AK3_DIR="$HOME/AnyKernel3"
-DEFCONFIG="gki_config"
+DEFCONFIG="lisa_QGKI.config"
 
 ZIPNAME="Stock-Kernel-$(date '+%Y%m%d-%H%M')-ksu.zip"
 
@@ -22,7 +22,7 @@ export PATH="$TC_DIR/bin:$PATH"
 
 if [[ $1 = "-r" || $1 = "--regen" ]]; then
 	make $MAKE_PARAMS $DEFCONFIG savedefconfig
-	cp out/defconfig arch/arm64/configs/$DEFCONFIG
+	cp out/defconfig $DEFCONFIG
 	echo -e "\nSuccessfully regenerated defconfig at $DEFCONFIG"
 	exit
 fi
